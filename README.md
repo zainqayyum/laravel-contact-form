@@ -31,13 +31,10 @@ https://github.com/zainqayyum/laravel-contact-form.git
 
 cd laravel-contact-form
 
-# Install dependencies
-composer install
+# Create .env
+rename the env file with .env
 
-# Generate app key
-php artisan key:generate
-
-# setup database and mail configurations in .env file
+# Setup database and mail configurations in .env file
 MAIL_ADMIN=
 MAIL_HOST=
 MAIL_PORT=
@@ -48,6 +45,12 @@ MAIL_FROM_ADDRESS=
 DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
+
+# Install dependencies
+composer install
+
+# Generate app key
+php artisan key:generate
 
 # Run migrations
 php artisan migrate
